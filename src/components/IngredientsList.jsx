@@ -31,7 +31,7 @@ const ingredientStrings = mapIngredientsToStrings(props.ingredients)
         props.ingredients.length>0 && (<section>
                 <h2 className='list-head'>Ingredients on hand:</h2>
                 <ul className="ingredients-list" aria-live="polite">{ingredientList}</ul>
-                {props.ingredients.length >= 1 && <div className="get-recipe-container">
+                {props.ingredients.length >= 4 && <div className="get-recipe-container">
                     <div ref={props.ref} id="recipeSection">
                         <h3>Ready for a recipe?</h3>
                         <p>Generate a recipe from your list of ingredients.</p>

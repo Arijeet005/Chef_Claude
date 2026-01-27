@@ -58,7 +58,7 @@ Return ONLY the full recipe and nothing else.
                 ],
                 generationConfig: {
                     temperature: 0.7,
-                    maxOutputTokens: 1024
+                    maxOutputTokens: 3000
                 }
             }
         });

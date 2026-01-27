@@ -1,12 +1,63 @@
-# React + Vite
+# Chef Claude
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Chef Claude is an intelligent cooking assistant built with React and Vite. It helps you decide what to cook by generating a complete recipe based on the ingredients you have on hand, powered by the Google Gemini API.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+-   **Ingredient Management**: Add ingredients to your pantry list.
+-   **AI Recipe Generation**: Uses Google's Gemini Flash model to create a unique, complete recipe from your listed ingredients.
+-   **Formatted Output**: Displays the recipe in a clean, easy-to-read Markdown format with steps, ingredients, and descriptions.
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+-   **Frontend**: React, Vite
+-   **Styling**: CSS
+-   **AI Integration**: Google Generative AI (Gemini)
+-   **HTTP Client**: Axios
+
+## Getting Started
+
+### Prerequisites
+
+-   Node.js installed.
+-   A Google Gemini API key.
+
+### Installation
+
+1.  **Clone the repository:**
+
+    ```bash
+    git clone https://github.com/Arijeet005/Chef_Claude.git
+    cd chef-claude
+    ```
+
+2.  **Install dependencies:**
+
+    ```bash
+    npm install
+    ```
+
+3.  **Environment Setup:**
+
+    Create a `.env` file in the root directory and add your Google Gemini API key:
+
+    ```env
+    VITE_API_GENERATIVE_LANGUAGE_CLIENT=your_google_api_key_here
+    ```
+
+    > **Note:** Ensure your `.env` file is added to `.gitignore` to protect your API key.
+
+4.  **Run the application:**
+
+    ```bash
+    npm run dev
+    ```
+
+    Open your browser and navigate to the URL shown in the terminal (usually `http://localhost:5173`).
+
+## Usage
+
+1.  Enter an ingredient in the input field and click "Add ingredient".
+2.  Add at least 4 ingredients to unlock the "Get a recipe" button.
+3.  Click "Get a recipe" and wait for Chef Claude to work his magic!
+4.  Follow the generated instructions to cook your meal.
