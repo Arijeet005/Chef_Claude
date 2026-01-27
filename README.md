@@ -1,4 +1,7 @@
-# Chef Claude
+<h1>
+  <img src="./src/assets/chef-claude-icon.png" alt="Chef Claude Logo" width="36" style="vertical-align: middle; margin-right: 10px;" />
+  Chef Claude
+</h1>
 
 Chef Claude is an intelligent cooking assistant built with React and Vite. It helps you decide what to cook by generating a complete recipe based on the ingredients you have on hand, powered by the Google Gemini API.
 
