@@ -16,7 +16,6 @@ Chef Claude is an intelligent cooking assistant built with React and Vite. It he
 -   **Frontend**: React, Vite
 -   **Styling**: CSS
 -   **AI Integration**: Google Generative AI (Gemini)
--   **HTTP Client**: Axios
 
 ## Getting Started
 
